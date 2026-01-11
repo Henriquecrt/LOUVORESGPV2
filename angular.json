@@ -21,7 +21,8 @@
           },
           "configurations": {
             "production": {
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "serviceWorker": "ngsw-config.json"
             },
             "development": {
               "optimization": false,
@@ -34,8 +35,7 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "options": {
-            "port": 3000,
-            "proxyConfig": "src/proxy.conf.json"
+            "port": 3000
           },
           "configurations": {
             "production": {
@@ -51,6 +51,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "e6a97c74-187e-40b9-817b-20f52ab8cbc9"
   }
 }
